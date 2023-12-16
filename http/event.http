@@ -1,0 +1,32 @@
+
+###
+POST {{baseurl}}/events
+Content-Type: application/json
+
+{
+  "title": "title_68f727446197",
+  "description": "description_917b09322a8d",
+  "organizer": "organizer_05712f73ab4c",
+  "eventType": "eventType_c707d9ef364e",
+  "eventLocation": "eventLocation_6b67c9cdc085",
+  "eventCategory": "eventCategory_b0169f13a7f0",
+  "eventDuration": "eventDuration_5caca9ab187c",
+  "eventDate": "2023-12-09T22:36:51"
+}
+
+###
+GET {{baseurl}}/events/by-organizer/{{organizer}}
+Accept: application/json
+
+
+###
+GET {{baseurl}}/events
+Accept: application/json
+
+###
+GET {{baseurl}}/events/2300
+Accept: application/json
+
+
+###
+DELETE {{baseurl}}/events/1/{{organizer}}
